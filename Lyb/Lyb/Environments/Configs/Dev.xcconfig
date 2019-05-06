@@ -1,0 +1,17 @@
+//
+//  Dev.xcconfig
+//  Lyb
+//
+//  Created by Daniel Tombor on 2019. 05. 05..
+//  Copyright © 2019. TransferWise. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+app_name = Lyb Dev
+app_icon = Dev
+bundle_id = me.tmbr.dev.lyb
+
+protocol = https
+host = lyb-dev.herokuapp.com

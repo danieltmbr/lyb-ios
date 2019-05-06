@@ -1,0 +1,17 @@
+//
+//  ProdDebug.xcconfig
+//  Lyb
+//
+//  Created by Daniel Tombor on 2019. 05. 06..
+//  Copyright © 2019. TransferWise. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+app_name = Lyb Debug
+app_icon = Release
+bundle_id = me.tmbr.debug.lyb
+
+protocol = https
+host = lyb.herokuapp.com
