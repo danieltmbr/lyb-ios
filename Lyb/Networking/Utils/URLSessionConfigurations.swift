@@ -1,11 +1,3 @@
-//
-//  URLSessionConfigurations.swift
-//  Service
-//
-//  Created by Daniel Tombor on 2019. 04. 15..
-//  Copyright © 2019. danieltmbr. All rights reserved.
-//
-
 import Foundation
 
 public extension URLSessionConfiguration {

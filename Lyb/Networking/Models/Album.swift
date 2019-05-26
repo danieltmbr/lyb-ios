@@ -1,11 +1,3 @@
-//
-//  Album.swift
-//  LyricsService
-//
-//  Created by Daniel Tombor on 2018. 12. 04..
-//  Copyright © 2018. danieltmbr. All rights reserved.
-//
-
 import Foundation
 
 public struct Album: Decodable {
@@ -41,11 +33,11 @@ public struct Album: Decodable {
         case executives = "executive_producers"
         case labels
 
-		var dateFormat: DateFormat? {
-			switch self {
-			case .releaseDate: return .release
-			default: return nil
-			}
-		}
+        var dateFormat: DateFormat? {
+            switch self {
+            case .releaseDate: return .release
+            default: return nil
+            }
+        }
     }
 }

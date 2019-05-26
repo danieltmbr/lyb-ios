@@ -1,0 +1,6 @@
+framework module Pods_Lyb {
+  umbrella header "Pods-Lyb-umbrella.h"
+
+  export *
+  module * { export * }
+}

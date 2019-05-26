@@ -15,14 +15,14 @@ extension KeyedDecodingContainer {
             do {
                 result = try decodeIfPresent(T.self, forKey: key)
             } catch {
-				assertionFailure("Could not decode value. \(error.localizedDescription)")
+                assertionFailure("Could not decode value. \(error.localizedDescription)")
             }
             return result ?? T.defaultValue
     }
 }
 
 extension Array: DefaultValue {
-    public static var defaultValue: Array<Element> {
+    public static var defaultValue: [Element] {
         return []
     }
 }

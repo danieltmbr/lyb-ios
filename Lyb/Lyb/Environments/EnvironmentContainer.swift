@@ -1,11 +1,3 @@
-//
-//  ConfigContainer.swift
-//  Lyb
-//
-//  Created by Daniel Tombor on 2019. 05. 05..
-//  Copyright © 2019. TransferWise. All rights reserved.
-//
-
 import Foundation
 
 struct EnvironmentContainer: Decodable {

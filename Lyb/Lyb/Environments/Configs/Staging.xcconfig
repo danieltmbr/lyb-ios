@@ -1,14 +1,3 @@
-//
-//  Staging.xcconfig
-//  Lyb
-//
-//  Created by Daniel Tombor on 2019. 05. 05..
-//  Copyright © 2019. TransferWise. All rights reserved.
-//
-
-// Configuration settings file format documentation can be found at:
-// https://help.apple.com/xcode/#/dev745c5c974
-
 app_name = Lyb Staging
 app_icon = Staging
 bundle_id = me.tmbr.lyb.staging

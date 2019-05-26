@@ -5,12 +5,12 @@ public final class LybApiClient: NSObject, ApiClient {
     // MARK: - Properties
 
     public let environment: ApiEnvironment
-    
+
     private let config: URLSessionConfiguration
     private lazy var session: URLSession = {
         return URLSession(configuration: config, delegate: self, delegateQueue: nil)
     }()
-    private var waitingCallbacks: [URLRequest: () -> ()] = [:]
+    private var waitingCallbacks: [URLRequest: () -> Void] = [:]
 
     // MARK: - Methods
 
@@ -20,11 +20,13 @@ public final class LybApiClient: NSObject, ApiClient {
         super.init()
     }
 
-    public func perform<M, T>(task: T, waitingCallback: WaitingCallback?, completion: @escaping (Result<M, Error>) -> ())
+    public func perform<M, T>(task: T,
+                              waitingCallback: WaitingCallback?,
+                              completion: @escaping (Result<M, Error>) -> Void)
         where T: Task, M: Decodable, T.Model == M {
 
             let request = createRequest(for: task.request, config: session.configuration)
-            let dataTask = session.dataTask(with: request) { [weak self] (data, response, error) in
+            let dataTask = session.dataTask(with: request) { [weak self] data, _, error in
                 self?.waitingCallbacks.removeValue(forKey: request)
                 do {
                     let model = try task.parser(data, error)

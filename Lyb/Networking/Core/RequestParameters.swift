@@ -1,7 +1,7 @@
 import Foundation
 
 /// Parameters sent as query items
-public typealias QueryItems = Dictionary<String, String>
+public typealias QueryItems = [String: String]
 
 /// Parameters sent in the body
 public protocol BodyParameter {
@@ -16,18 +16,18 @@ public enum RequestParameters {
 
 extension RequestParameters: Equatable {
 
-	public static func == (lhs: RequestParameters, rhs: RequestParameters) -> Bool {
-		switch (lhs, rhs) {
-		case (.body(let p1), .body(let p2)): return p1.data == p2.data
-		case (.query(let q1), .query(let q2)): return q1 == q2
-		default: return false
-		}
-	}
+    public static func == (lhs: RequestParameters, rhs: RequestParameters) -> Bool {
+        switch (lhs, rhs) {
+        case (.body(let p1), .body(let p2)): return p1.data == p2.data
+        case (.query(let q1), .query(let q2)): return q1 == q2
+        default: return false
+        }
+    }
 }
 
 /// Default serialisation for `Encodable` types
 extension BodyParameter where Self: Encodable {
-	public var data: Data? {
+    public var data: Data? {
         do {
             return try JSONEncoder().encode(self)
         } catch {
@@ -38,5 +38,5 @@ extension BodyParameter where Self: Encodable {
 }
 
 extension Data: BodyParameter {
-	public var data: Data? { return self }
+    public var data: Data? { return self }
 }

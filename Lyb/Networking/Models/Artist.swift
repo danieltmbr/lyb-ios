@@ -1,11 +1,3 @@
-//
-//  Artist.swift
-//  LyricsService
-//
-//  Created by Daniel Tombor on 2018. 11. 25..
-//  Copyright © 2018. danieltmbr. All rights reserved.
-//
-
 import Foundation
 
 public struct Artist: Decodable {

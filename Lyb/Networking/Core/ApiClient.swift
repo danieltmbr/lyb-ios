@@ -2,8 +2,8 @@ import Foundation
 
 public protocol ApiClient {
 
-    typealias WaitingCallback = () -> ()
-    typealias Completion<M: Decodable> = (Result<M, Error>) -> ()
+    typealias WaitingCallback = () -> Void
+    typealias Completion<M: Decodable> = (Result<M, Error>) -> Void
 
     var environment: ApiEnvironment { get }
 
@@ -39,7 +39,7 @@ extension ApiClient {
         urlRequest.setValue(request.contentType.rawValue, forHTTPHeaderField: "Content-Type")
 
         if let sessionConfigurationHeaders = config?.httpAdditionalHeaders {
-            for (name, value) in sessionConfigurationHeaders  {
+            for (name, value) in sessionConfigurationHeaders {
                 urlRequest.addValue("\(value)", forHTTPHeaderField: "\(name)")
             }
         }

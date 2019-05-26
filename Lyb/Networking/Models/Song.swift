@@ -1,15 +1,6 @@
-//
-//  Song.swift
-//  LyricsService
-//
-//  Created by Daniel Tombor on 2018. 11. 25..
-//  Copyright © 2018. danieltmbr. All rights reserved.
-//
-
 import Foundation
-import Networking
 
-public enum LyricsState: String, RawRepresentable, DefaultDecodable  {
+public enum LyricsState: String, RawRepresentable, DefaultDecodable {
     case complete
     case unreleased
     case other
@@ -57,11 +48,11 @@ public struct Song: Decodable {
         case songArtImageUrl = "song_art_image_url"
         case headerImageThumbnailUrl = "header_image_thumbnail_url"
 
-		var dateFormat: DateFormat? {
-			switch self {
-			case .releaseDate: return .release
-			default: return nil
-			}
-		}
+        var dateFormat: DateFormat? {
+            switch self {
+            case .releaseDate: return .release
+            default: return nil
+            }
+        }
     }
 }
