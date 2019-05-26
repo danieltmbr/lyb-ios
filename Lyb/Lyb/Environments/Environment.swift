@@ -21,8 +21,6 @@ import Foundation
  *
  */
 
-
-
 struct Environment: Decodable {
     let `protocol`: String
     let host: String

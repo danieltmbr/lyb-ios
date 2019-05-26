@@ -15,18 +15,25 @@ public struct NetworkTask<Model>: Task {
 
 extension NetworkTask where Model: Decodable {
 
-    public init(request: Request, dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .iso8601) {
+    public init(request: Request, dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .customFormatted) {
         self.request = request
         parser = { (data, error) in
-			if let error = error { throw error }
-            guard let data = data else { throw error ?? NetworkTaskError.noData }
+			if let error = error { throw NetworkingError(error: error, type: .response) }
+            guard let data = data else { throw NetworkingError(error: NetworkTaskError.noData, type: .parse) }
+
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = dateDecodingStrategy
-            return try decoder.decode(Model.self, from: data)
+
+			do {
+            	return try decoder.decode(Model.self, from: data)
+			} catch {
+				throw NetworkingError(error: NetworkTaskError.decode(error), type: .parse)
+			}
         }
     }
 }
 
 public enum NetworkTaskError: Error {
     case noData
+	case decode(Error)
 }

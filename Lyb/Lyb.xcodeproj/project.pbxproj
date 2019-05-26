@@ -15,10 +15,31 @@
 		E2238A2E227F7FDE00E56C2A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2238A2D227F7FDE00E56C2A /* Environment.swift */; };
 		E2238A30227F80C700E56C2A /* EnvironmentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2238A2F227F80C700E56C2A /* EnvironmentContainer.swift */; };
 		E2238A422280231800E56C2A /* AppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2238A412280231800E56C2A /* AppIcons.xcassets */; };
+		E2269E572292065100D46803 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E532292065100D46803 /* Label.swift */; };
+		E2269E582292065100D46803 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E542292065100D46803 /* Artist.swift */; };
+		E2269E592292065100D46803 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E552292065100D46803 /* Album.swift */; };
+		E2269E5A2292065100D46803 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E562292065100D46803 /* Song.swift */; };
+		E2269E5D2292065F00D46803 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E5B2292065F00D46803 /* DateFormat.swift */; };
+		E2269E5E2292065F00D46803 /* URLSessionConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E5C2292065F00D46803 /* URLSessionConfigurations.swift */; };
+		E2269E622292069B00D46803 /* LybApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E602292069B00D46803 /* LybApiClient.swift */; };
+		E2269E64229206EF00D46803 /* ApiEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E63229206EF00D46803 /* ApiEnvironment.swift */; };
+		E2269E692292095F00D46803 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E682292095F00D46803 /* AlbumTests.swift */; };
+		E2269E6B2292096900D46803 /* ArtistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E6A2292096900D46803 /* ArtistTests.swift */; };
+		E2269E6D2292097200D46803 /* LabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E6C2292097200D46803 /* LabelTests.swift */; };
+		E2269E6F2292097B00D46803 /* SongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E6E2292097B00D46803 /* SongTests.swift */; };
+		E2269E72229209D900D46803 /* Album.json in Resources */ = {isa = PBXBuildFile; fileRef = E2269E71229209D900D46803 /* Album.json */; };
+		E2269E74229209E700D46803 /* Artist.json in Resources */ = {isa = PBXBuildFile; fileRef = E2269E73229209E700D46803 /* Artist.json */; };
+		E2269E7622920A1400D46803 /* Label.json in Resources */ = {isa = PBXBuildFile; fileRef = E2269E7522920A1400D46803 /* Label.json */; };
+		E2269E7822920A1E00D46803 /* Song.json in Resources */ = {isa = PBXBuildFile; fileRef = E2269E7722920A1E00D46803 /* Song.json */; };
+		E2269E7B2292817400D46803 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E7A2292817400D46803 /* DateHelper.swift */; };
+		E2269E7F229A855500D46803 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E7E229A855500D46803 /* JsonHelper.swift */; };
+		E2269E82229A9F6000D46803 /* MockUrlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E81229A9F6000D46803 /* MockUrlProtocol.swift */; };
+		E2269E84229AA72800D46803 /* LybApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E83229AA72800D46803 /* LybApiClientTests.swift */; };
+		E2269E86229AD75300D46803 /* MockEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2269E85229AD75300D46803 /* MockEnvironment.swift */; };
 		E2929A59228D48FC00611936 /* DefaultDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2929A58228D48FC00611936 /* DefaultDecodableTests.swift */; };
 		E2929A5B228D493700611936 /* HttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2929A5A228D493700611936 /* HttpRequestTests.swift */; };
 		E2929A5D229140B100611936 /* NetworkTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2929A5C229140B100611936 /* NetworkTaskTests.swift */; };
-		E2929A5F2291421800611936 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2929A5E2291421800611936 /* NetworkError.swift */; };
+		E2929A5F2291421800611936 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2929A5E2291421800611936 /* NetworkingError.swift */; };
 		E2E620C822809ACE009E8089 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E620BF22809ACD009E8089 /* Networking.framework */; };
 		E2E620D122809ACE009E8089 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E620C122809ACD009E8089 /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2E620D422809ACE009E8089 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E620BF22809ACD009E8089 /* Networking.framework */; };
@@ -99,10 +120,31 @@
 		E22443262280450700F3D314 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		E22443272280458B00F3D314 /* Profiling.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profiling.xcconfig; sourceTree = "<group>"; };
 		E2244328228045B400F3D314 /* ProdDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProdDebug.xcconfig; sourceTree = "<group>"; };
+		E2269E532292065100D46803 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		E2269E542292065100D46803 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		E2269E552292065100D46803 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		E2269E562292065100D46803 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		E2269E5B2292065F00D46803 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		E2269E5C2292065F00D46803 /* URLSessionConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionConfigurations.swift; sourceTree = "<group>"; };
+		E2269E602292069B00D46803 /* LybApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LybApiClient.swift; sourceTree = "<group>"; };
+		E2269E63229206EF00D46803 /* ApiEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnvironment.swift; sourceTree = "<group>"; };
+		E2269E682292095F00D46803 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
+		E2269E6A2292096900D46803 /* ArtistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTests.swift; sourceTree = "<group>"; };
+		E2269E6C2292097200D46803 /* LabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTests.swift; sourceTree = "<group>"; };
+		E2269E6E2292097B00D46803 /* SongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTests.swift; sourceTree = "<group>"; };
+		E2269E71229209D900D46803 /* Album.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Album.json; sourceTree = "<group>"; };
+		E2269E73229209E700D46803 /* Artist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Artist.json; sourceTree = "<group>"; };
+		E2269E7522920A1400D46803 /* Label.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Label.json; sourceTree = "<group>"; };
+		E2269E7722920A1E00D46803 /* Song.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Song.json; sourceTree = "<group>"; };
+		E2269E7A2292817400D46803 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		E2269E7E229A855500D46803 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		E2269E81229A9F6000D46803 /* MockUrlProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlProtocol.swift; sourceTree = "<group>"; };
+		E2269E83229AA72800D46803 /* LybApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LybApiClientTests.swift; sourceTree = "<group>"; };
+		E2269E85229AD75300D46803 /* MockEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEnvironment.swift; sourceTree = "<group>"; };
 		E2929A58228D48FC00611936 /* DefaultDecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDecodableTests.swift; sourceTree = "<group>"; };
 		E2929A5A228D493700611936 /* HttpRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestTests.swift; sourceTree = "<group>"; };
 		E2929A5C229140B100611936 /* NetworkTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTaskTests.swift; sourceTree = "<group>"; };
-		E2929A5E2291421800611936 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E2929A5E2291421800611936 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		E2E620BF22809ACD009E8089 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E620C122809ACD009E8089 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
 		E2E620C222809ACE009E8089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -255,19 +297,103 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		E2E620C022809ACD009E8089 /* Networking */ = {
+		E2269E50229205E600D46803 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E2E620C122809ACD009E8089 /* Networking.h */,
-				E2E620C222809ACE009E8089 /* Info.plist */,
 				E2E620E522809B33009E8089 /* ApiClient.swift */,
-				E2E620E822809B33009E8089 /* DefaultDecodable.swift */,
+				E2269E63229206EF00D46803 /* ApiEnvironment.swift */,
 				E2E620E322809B33009E8089 /* HttpRequest.swift */,
-				E2929A5E2291421800611936 /* NetworkError.swift */,
+				E2929A5E2291421800611936 /* NetworkingError.swift */,
 				E2E620E422809B33009E8089 /* NetworkTask.swift */,
 				E2E620E722809B33009E8089 /* Request.swift */,
 				E2E620E922809B34009E8089 /* RequestParameters.swift */,
 				E2E620E622809B33009E8089 /* Task.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E2269E51229205F400D46803 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2269E5B2292065F00D46803 /* DateFormat.swift */,
+				E2E620E822809B33009E8089 /* DefaultDecodable.swift */,
+				E2269E5C2292065F00D46803 /* URLSessionConfigurations.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E2269E52229205FA00D46803 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2269E552292065100D46803 /* Album.swift */,
+				E2269E542292065100D46803 /* Artist.swift */,
+				E2269E532292065100D46803 /* Label.swift */,
+				E2269E562292065100D46803 /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E2269E65229207C200D46803 /* CoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2E620F222809B43009E8089 /* ApiClientTests.swift */,
+				E2929A5A228D493700611936 /* HttpRequestTests.swift */,
+				E2929A5C229140B100611936 /* NetworkTaskTests.swift */,
+				E2E620F322809B43009E8089 /* RequestParametersTests.swift */,
+			);
+			path = CoreTests;
+			sourceTree = "<group>";
+		};
+		E2269E66229207D000D46803 /* UtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2929A58228D48FC00611936 /* DefaultDecodableTests.swift */,
+			);
+			path = UtilsTests;
+			sourceTree = "<group>";
+		};
+		E2269E67229207DE00D46803 /* ModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2269E71229209D900D46803 /* Album.json */,
+				E2269E682292095F00D46803 /* AlbumTests.swift */,
+				E2269E73229209E700D46803 /* Artist.json */,
+				E2269E6A2292096900D46803 /* ArtistTests.swift */,
+				E2269E7522920A1400D46803 /* Label.json */,
+				E2269E6C2292097200D46803 /* LabelTests.swift */,
+				E2269E7722920A1E00D46803 /* Song.json */,
+				E2269E6E2292097B00D46803 /* SongTests.swift */,
+			);
+			path = ModelsTests;
+			sourceTree = "<group>";
+		};
+		E2269E792292813800D46803 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E2269E7A2292817400D46803 /* DateHelper.swift */,
+				E2269E7E229A855500D46803 /* JsonHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E2269E80229A9F5200D46803 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E2269E81229A9F6000D46803 /* MockUrlProtocol.swift */,
+				E2269E85229AD75300D46803 /* MockEnvironment.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E2E620C022809ACD009E8089 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E2E620C222809ACE009E8089 /* Info.plist */,
+				E2E620C122809ACD009E8089 /* Networking.h */,
+				E2269E602292069B00D46803 /* LybApiClient.swift */,
+				E2269E50229205E600D46803 /* Core */,
+				E2269E52229205FA00D46803 /* Models */,
+				E2269E51229205F400D46803 /* Utils */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -277,11 +403,12 @@
 			children = (
 				E2E620D022809ACE009E8089 /* Info.plist */,
 				E2E620F122809B42009E8089 /* NetworkingTests-Bridging-Header.h */,
-				E2E620F222809B43009E8089 /* ApiClientTests.swift */,
-				E2929A58228D48FC00611936 /* DefaultDecodableTests.swift */,
-				E2929A5A228D493700611936 /* HttpRequestTests.swift */,
-				E2929A5C229140B100611936 /* NetworkTaskTests.swift */,
-				E2E620F322809B43009E8089 /* RequestParametersTests.swift */,
+				E2269E83229AA72800D46803 /* LybApiClientTests.swift */,
+				E2269E65229207C200D46803 /* CoreTests */,
+				E2269E67229207DE00D46803 /* ModelsTests */,
+				E2269E66229207D000D46803 /* UtilsTests */,
+				E2269E80229A9F5200D46803 /* Mocks */,
+				E2269E792292813800D46803 /* Helpers */,
 			);
 			path = NetworkingTests;
 			sourceTree = "<group>";
@@ -481,6 +608,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2269E7822920A1E00D46803 /* Song.json in Resources */,
+				E2269E74229209E700D46803 /* Artist.json in Resources */,
+				E2269E72229209D900D46803 /* Album.json in Resources */,
+				E2269E7622920A1400D46803 /* Label.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,14 +648,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2269E5A2292065100D46803 /* Song.swift in Sources */,
+				E2269E64229206EF00D46803 /* ApiEnvironment.swift in Sources */,
 				E2E620ED22809B34009E8089 /* Task.swift in Sources */,
-				E2929A5F2291421800611936 /* NetworkError.swift in Sources */,
+				E2269E5D2292065F00D46803 /* DateFormat.swift in Sources */,
+				E2269E5E2292065F00D46803 /* URLSessionConfigurations.swift in Sources */,
+				E2929A5F2291421800611936 /* NetworkingError.swift in Sources */,
 				E2E620EF22809B34009E8089 /* DefaultDecodable.swift in Sources */,
 				E2E620EA22809B34009E8089 /* HttpRequest.swift in Sources */,
 				E2E620F022809B34009E8089 /* RequestParameters.swift in Sources */,
+				E2269E572292065100D46803 /* Label.swift in Sources */,
 				E2E620EE22809B34009E8089 /* Request.swift in Sources */,
 				E2E620EB22809B34009E8089 /* NetworkTask.swift in Sources */,
+				E2269E592292065100D46803 /* Album.swift in Sources */,
+				E2269E582292065100D46803 /* Artist.swift in Sources */,
 				E2E620EC22809B34009E8089 /* ApiClient.swift in Sources */,
+				E2269E622292069B00D46803 /* LybApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +674,16 @@
 				E2E620F522809B43009E8089 /* ApiClientTests.swift in Sources */,
 				E2929A5B228D493700611936 /* HttpRequestTests.swift in Sources */,
 				E2E620F622809B43009E8089 /* RequestParametersTests.swift in Sources */,
+				E2269E82229A9F6000D46803 /* MockUrlProtocol.swift in Sources */,
+				E2269E7F229A855500D46803 /* JsonHelper.swift in Sources */,
+				E2269E84229AA72800D46803 /* LybApiClientTests.swift in Sources */,
+				E2269E7B2292817400D46803 /* DateHelper.swift in Sources */,
+				E2269E86229AD75300D46803 /* MockEnvironment.swift in Sources */,
+				E2269E6B2292096900D46803 /* ArtistTests.swift in Sources */,
+				E2269E692292095F00D46803 /* AlbumTests.swift in Sources */,
 				E2929A5D229140B100611936 /* NetworkTaskTests.swift in Sources */,
+				E2269E6D2292097200D46803 /* LabelTests.swift in Sources */,
+				E2269E6F2292097B00D46803 /* SongTests.swift in Sources */,
 				E2929A59228D48FC00611936 /* DefaultDecodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

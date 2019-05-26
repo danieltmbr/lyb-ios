@@ -11,7 +11,7 @@
 
 app_name = Lyb Dev
 app_icon = Dev
-bundle_id = me.tmbr.dev.lyb
+bundle_id = me.tmbr.lyb.dev
 
 protocol = https
 host = lyb-dev.herokuapp.com

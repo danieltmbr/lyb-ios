@@ -18,10 +18,10 @@ final class NetworkTaskTests: XCTestCase {
 		let json = """
 		{
 			"title": "Parse date",
-			"date": "1992-03-20T12:00:00Z"
+			"date": "1992-03-20"
 		}
 		""".data(using: .utf8)!
-		let day = getDay(of: Calendar.current.date(from: DateComponents(year: 1992, month: 3, day: 20)))
+		let day = getDay(year: 1992, month: 3, day: 20)
 
 		let task = NetworkTask<Json>(request: HttpRequest.test)
 		let decodedJson = try? task.parser(json, nil)
@@ -29,20 +29,21 @@ final class NetworkTaskTests: XCTestCase {
 		XCTAssertNotNil(decodedJson)
 		XCTAssertEqual(task.request.path, HttpRequest.test.path)
 		XCTAssertEqual(decodedJson?.title, "Parse date")
-		XCTAssertNotNil(getDay(of: decodedJson?.date))
-		XCTAssertEqual(getDay(of: decodedJson?.date), day)
+		XCTAssertNotNil(decodedJson?.date.day)
+		XCTAssertEqual(decodedJson?.date.day, day)
     }
-
-	private func getDay(of date: Date?) -> DateInterval? {
-		guard let date = date else { return nil }
-		return Calendar.current.dateInterval(of: .day, for: date)
-	}
-
 }
 
 private struct Json: Decodable, Equatable {
 	let title: String
 	let date: Date
+
+	private enum CodingKeys: String, CodingKey, CustomDateFormat {
+		case title
+		case date
+
+		var dateFormat: DateFormat? { return .release }
+	}
 
 	static let test = Json(title: "test", date: Date())
 }

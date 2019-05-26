@@ -1,0 +1,70 @@
+{
+	"cover_art_url": "https://images.genius.com/389e5fd1eff885b2e7b62060869945cc.1000x1000x1.jpg",
+	"full_title": "The Life of Pablo by Kanye West",
+	"id": 120604,
+	"name": "The Life of Pablo",
+	"release_date": "2016-02-14",
+	"url": "https://genius.com/albums/Kanye-west/The-life-of-pablo",
+	"artist": {
+		"id": 72,
+		"image_url": "https://images.genius.com/a1c9ad953d882a4b336ce3b7576360a1.675x675x1.jpg",
+		"name": "Kanye West",
+		"url": "https://genius.com/artists/Kanye-west"
+	},
+	"cover_arts": [
+		{
+			"annotated": true,
+			"api_path": "/albums/120604",
+			"id": 28803,
+			"image_url": "https://images.genius.com/389e5fd1eff885b2e7b62060869945cc.1000x1000x1.jpg",
+			"thumbnail_image_url": "https://images.genius.com/389e5fd1eff885b2e7b62060869945cc.300x300x1.jpg",
+			"url": "https://genius.com/album_cover_arts/28803"
+		},
+	],
+	"featurings": [
+		{
+			"id": 16751,
+			"image_url": "https://images.genius.com/d5771671554a8976b034671291d2bca7.527x527x1.jpg",
+			"name": "Chance the Rapper",
+			"url": "https://genius.com/artists/Chance-the-rapper"
+		},
+		{
+			"id": 438,
+			"image_url": "https://images.genius.com/2701646a3c03068626077f58fe4ae680.472x472x1.png",
+			"name": "Chris Brown",
+			"url": "https://genius.com/artists/Chris-brown"
+		},
+	],
+	"producers": [
+		{
+			"id": 55684,
+			"image_url": "https://images.genius.com/527f5a08bbacac18e6873e1d3817f386.400x400x1.jpg",
+			"name": "Allen Ritter",
+			"url": "https://genius.com/artists/Allen-ritter"
+		},
+	],
+	"executive_producers": [
+		{
+			"id": 72,
+			"image_url": "https://images.genius.com/a1c9ad953d882a4b336ce3b7576360a1.675x675x1.jpg",
+			"name": "Kanye West",
+			"url": "https://genius.com/artists/Kanye-west"
+		},
+	],
+	"writers": [
+		{
+			"id": 72,
+			"image_url": "https://images.genius.com/a1c9ad953d882a4b336ce3b7576360a1.675x675x1.jpg",
+			"name": "Kanye West",
+			"url": "https://genius.com/artists/Kanye-west"
+		},
+	],
+	"labels": [
+		{
+			"id": 79113,
+			"image_url": "https://images.genius.com/f3374b6a83bc9d6248a7464cef582482.512x512x1.png",
+			"name": "Def Jam Recordings",
+			"url": "https://genius.com/artists/Def-jam-recordings"
+		},
+	]
+}

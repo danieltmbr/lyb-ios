@@ -11,7 +11,7 @@
 
 app_name = Lyb Staging
 app_icon = Staging
-bundle_id = me.tmbr.staging.lyb
+bundle_id = me.tmbr.lyb.staging
 
 protocol = https
 host = lyb-staging.herokuapp.com

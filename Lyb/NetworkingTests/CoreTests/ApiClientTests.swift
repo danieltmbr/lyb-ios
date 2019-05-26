@@ -3,12 +3,12 @@ import XCTest
 
 final class ApiClientTests: XCTestCase {
 
-	private var env: Env!
+	private var env: MockEnv!
 	private var client: Client!
 
 	override func setUp() {
 		super.setUp()
-		env = Env(name: "Test", baseUrl: URL(string: "https://test.lyb.com")!, headers: ["App-Version":"1"])
+		env = MockEnv(name: "Test", baseUrl: URL(string: "https://test.lyb.com")!, headers: ["App-Version":"1"])
 		client = Client(environment: env)
 	}
 
@@ -62,12 +62,6 @@ final class ApiClientTests: XCTestCase {
 		XCTAssertEqual(urlRequest.httpBody, body.data)
 		XCTAssertNil(urlRequest.url?.query)
 	}
-}
-
-private struct Env: ApiEnvironment {
-	let name: String
-	let baseUrl: URL
-	let headers: [String : String]?
 }
 
 private final class Client: ApiClient {

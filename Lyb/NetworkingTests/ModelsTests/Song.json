@@ -1,0 +1,64 @@
+{
+	"featured_video": false,
+	"full_title": "Saint Pablo by Kanye West (Ft. Sampha)",
+	"id": 2428259,
+	"lyrics_state": "complete",
+	"path": "/Kanye-west-saint-pablo-lyrics",
+	"release_date": "2016-06-15",
+	"song_art_image_url": "https://images.genius.com/389e5fd1eff885b2e7b62060869945cc.1000x1000x1.jpg",
+	"title": "Saint Pablo",
+	"title_with_featured": "Saint Pablo (Ft. Sampha)",
+	"url": "https://genius.com/Kanye-west-saint-pablo-lyrics",
+	"lyrics": "Yeah, you're lookin' at the church in the night sky Wonderin' whether God's gonna say hi",
+	"album": {
+		"cover_art_url": "https://images.genius.com/389e5fd1eff885b2e7b62060869945cc.1000x1000x1.jpg",
+		"full_title": "The Life of Pablo by Kanye West",
+		"id": 120604,
+		"name": "The Life of Pablo",
+		"url": "https://genius.com/albums/Kanye-west/The-life-of-pablo",
+		"artist": {
+			"id": 72,
+			"image_url": "https://images.genius.com/a1c9ad953d882a4b336ce3b7576360a1.675x675x1.jpg",
+			"name": "Kanye West",
+			"url": "https://genius.com/artists/Kanye-west"
+		}
+	},
+	"featured_artists": [
+		{
+			"id": 26868,
+			"image_url": "https://images.genius.com/1c5f5bf4c1828e86a1c49d36a0ddb548.960x960x1.jpg",
+			"name": "Sampha",
+			"url": "https://genius.com/artists/Sampha"
+		}
+	],
+	"media": [
+		{
+			"native_uri": "spotify:track:1o0kWPueYo94LIjPYOE5Nf",
+			"provider": "spotify",
+			"type": "audio",
+			"url": "https://open.spotify.com/track/1o0kWPueYo94LIjPYOE5Nf"
+		}
+	],
+	"primary_artist": {
+		"id": 72,
+		"image_url": "https://images.genius.com/a1c9ad953d882a4b336ce3b7576360a1.675x675x1.jpg",
+		"name": "Kanye West",
+		"url": "https://genius.com/artists/Kanye-west"
+	},
+	"producer_artists": [
+		{
+			"id": 72,
+			"image_url": "https://images.genius.com/a1c9ad953d882a4b336ce3b7576360a1.675x675x1.jpg",
+			"name": "Kanye West",
+			"url": "https://genius.com/artists/Kanye-west"
+		},
+	],
+	"writer_artists": [
+		{
+			"id": 72,
+			"image_url": "https://images.genius.com/a1c9ad953d882a4b336ce3b7576360a1.675x675x1.jpg",
+			"name": "Kanye West",
+			"url": "https://genius.com/artists/Kanye-west"
+		},
+	]
+}

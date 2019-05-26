@@ -11,7 +11,7 @@
 
 app_name = Lyb Profiling
 app_icon = Dev
-bundle_id = me.tmbr.profiling.lyb
+bundle_id = me.tmbr.lyb.profiling
 
 protocol = https
 host = lyb-dev.herokuapp.com

@@ -11,7 +11,7 @@
 
 app_name = Lyb Debug
 app_icon = Release
-bundle_id = me.tmbr.debug.lyb
+bundle_id = me.tmbr.lyb.debug
 
 protocol = https
 host = lyb.herokuapp.com
